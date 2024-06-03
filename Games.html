@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+   body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: #c28e00;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000000;
+  color: #fff;
+  transition: top 0.3s;
+  z-index: 1000;
+  height: 60px;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  margin-left: -400px;
+  margin-top: 5px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #c28e00;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #c28e00;
+}
+.navbar a, .dropbtn {
+  color: #c28e00;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #c28e00;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.games {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.games h2 {
+  text-align: center;
+  color: #c28e00;
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+
+.game h3 {
+  text-align: center;
+  color: #c28e00;
+  margin-bottom: 50px;
+}
+
+.game {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.game:hover {
+  transform: scale(1.05);
+}
+
+.game img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.game:hover img {
+  transform: scale(1.1);
+}
+
+.game-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.game:hover .games-content {
+  opacity: 1;
+}
+
+.game h3 {
+  margin-top: 20px;
+  color: #c28e00;
+  font-size: 30px;
+}
+
+.game p {
+  color: #fff;
+  line-height: 1.5;
+}
+
+  </style>
+</head>
+<body>
+  <header id="navbar">
+    <nav class="navbar">
+      <ul>
+        <li><img src="Rockstar Games Logo.jpg" alt="Logo" class="logo"></li>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Media</a>
+          <div class="dropdown-content">
+            <a href="https://x.com/RockstarGames?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">X</a>
+            <a href="https://www.instagram.com/rockstargames/?hl=en" target="_blank">Instagram</a>
+            <a href="https://www.youtube.com/@rockstargames" target="_blank">YouTube</a>
+            <a href="https://www.facebook.com/rockstargames/" target="_blank">Facebook</a>
+            <a href="https://discord.me/rockstargames" target="_blank">Discord</a>
+        </div>
+          </div>
+        <li><a href="Games.html">Games</a></li>
+        <li><a href="Gameplay.html">Gameplay</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="games" class="games">
+    <h2>GTA Games</h2>    
+    <div class="game">
+      <h3>Grand Theft Auto: London 1961</h3>
+      <a href="https://oldgamesdownload.com/grand-theft-auto-london-1961-fre3/">
+      <img src="Grand Theft Auto London 1961.jpg" alt="gta 1961"> </a>
+      <p>Grand Theft Auto games are set in fictional American locations. However, the original title has two mission packs that transport players back to London in the midst of the swinging sixties. As its name suggests, the second of these mission packs focuses on the year 1961.</p>
+       
+  </div>
+     <div class="game">
+        <h3>Grand Theft Auto: London 1969</h3>
+        <a href="https://www.myabandonware.com/game/grand-theft-auto-mission-pack-1-london-1969-7ps"> 
+        <img src="Grand Theft Auto London 1969.jpg" alt="gta 1969"></a>
+        <p>Before players traveled back to 1961 Britain, they first visited the country's capital in 1969 for GTA's very first mission pack. Cars driving on the left, constant references to British culture, and plenty of music from the era are just a few ways that the game aims to recreate the country and era.</p>
+        
+      </div>
+    <div class="game">
+        <h3>Grand Theft Auto: Vice City Stories</h3>
+        <a href="https://www.romspedia.com/roms/playstation-portable/grand-theft-auto-vice-city-stories-europe-v1-02"> 
+        <img src="Grand Theft Auto Vice City Stories.jpg" alt="gta vcs"></a>
+        <p>Vice City Stories acts as a prequel to the arguably timeless, Grand Theft Auto: Vice City. Despite being set in the same location though, the Miami-esque city looks a little different in this one. For instance, certain landmarks, such as the Avery Construction building, don't even exist yet due to the game taking place some two years earlier.</p>
+       
+      </div>
+    <div class="game">
+        <h3>Grand Theft Auto: Vice City</h3>
+        <a href="https://getintopc.com/games/adventure/gta-vice-city-free-download/">
+        <img src="GTA Vice City.jpg" alt="gta VC"> </a>
+        <p>When fans think of a GTA period piece, Vice City is generally the first one that springs to mind. Its 1980s setting is perfectly realized in the game's bright and vibrant presentation and the in-game radio is filled with iconic tracks that are synonymous with the decade.</p>
+        
+    </div>
+    <div class="game">
+        <h3>Grand Theft Auto: San Andreas</h3>
+        <a href="https://getintopc.cc/gta-san-andreas-pc-game-free-download/">
+        <img src="Grand Theft Auto San Andreas.jpg" alt="gta sa"> </a>
+        <p>Gangsta rap was absolutely huge in the '90s, so it's not all that surprising that the genre features so prominently throughout the GTA: San Andreas soundtrack. The songs instantly allow players to identify the era, as too do the outfits and hairstyles sported by the game's varied cast of characters.</p>
+    </div>
+    <div class="game">
+        <h3>Grand Theft Auto: Liberty City Stories</h3>
+        <a href="https://www.moddb.com/downloads/gta-liberty-city-stories-pc-full-edition-50">
+        <img src="Grand Theft Auto Liberty City Stories.jpg" alt="gta lcs"> </a>
+        <p>Three years before working with Claude in GTA 3, Toni Cipriani was busy serving as the main protagonist in Grand Theft Auto: Liberty City Stories. The game begins with him rejoining the Leone crime family after having spent some time lying low for murdering one of Liberty City's many made men.</p>
+        
+    </div>
+    <div class="game">
+      <h3>Grand Theft Auto 2</h3>
+      <a href="https://grand-theft-auto-2.en.softonic.com/"> 
+      <img src="Grand Theft Auto 2.jpg" alt="gta 2"></a>
+      <p>GTA 2 is the only game in the series that doesn't inform the player of the year that everything is taking place. Fans, of course, have theories, however, ranging from 1999 to 2013. Though some promotional material points to the latter, many consider 1999 to be more likely due to one of the radio hosts mentioning that the millennium is coming.</p>
+      
+  </div>
+  <div class="game">
+    <h3>Grand Theft Auto 3</h3>
+    <a href="https://grand-theft-auto-3.en.softonic.com/">
+    <img src="Grand Theft Auto 3.jpg" alt="gta 3"> </a>
+    <p>Grand Theft Auto 3 made a lot of changes to the series tried and tested formula. Most notably, it was the first 3D GTA game and also put a lot more emphasis on its narrative than each of its predecessors. The story follows silent protagonist Claude as he attempts to track down his ex-girlfriend Catalina and introduces players to a lovable cast of rogues.</p>
+    
+</div>
+<div class="game">
+  <h3>Grand Theft Auto 4</h3>
+  <a href="https://grand-theft-auto-iv.en.softonic.com/"> 
+  <img src="Grand Theft Auto 4.jpg" alt="gta 4"></a>
+  <p>Like its direct predecessor, GTA 4 takes place primarily in Liberty City, but during the year 2008 rather than 2001. The place has clearly changed with the times, especially when it comes to its residents. Things like mobile phones and the internet have also become a big part of people's lives, much like they had in the real world.</p>
+
+</div>
+<div class="game">
+  <h3>Grand Theft Auto 5</h3>
+  <a href="https://gta-v.en.softonic.com/"> 
+  <img src="Grand Theft Auto 5.jpg" alt="gta 5"></a>
+  <p>The main story of Grand Theft Auto 5 features three different protagonists from three different parts of San Andreas. Their lives intertwine during their time in Los Santos, and, despite how different they all are as people, they end up becoming good friends. At least for a while, anyway.</p>
+</div>
+<script src="Games.js"></script>
+</section>
+</div>
+</body>
+</html>
